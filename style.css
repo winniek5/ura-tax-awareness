@@ -1,0 +1,238 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* General page styling */
+body {
+    background-color: #f4f7f4;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #26352c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #e5b83d;
+}
+
+header h1 {
+    color: white;
+}
+
+
+/* Headings */
+h1, h2, h3 {
+    color: #164b35;
+}
+
+h2 {
+    border-bottom: 2px solid #e5b83d;
+    padding-bottom: 10px;
+}
+
+
+/* Banner image */
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Main content sections */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #d5e0d8;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+
+/* Floated image */
+.tax-image {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin: 10px 0 15px 20px;
+    border: 3px solid #164b35;
+    border-radius: 8px;
+}
+
+/* Clear the float after the introduction */
+.introduction::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Registration section */
+.registration {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 25px;
+    border: 3px solid #164b35;
+}
+
+/*
+Box Model explanation:
+Margin is the space OUTSIDE an element's border.
+Padding is the space INSIDE the border, between the content and border.
+
+With box-sizing: border-box, the padding and border are included
+in the declared width. At max-width: 900px, this element's
+total rendered width is 900px, not 900px plus padding and borders.
+*/
+
+
+/* Ordered list */
+ol {
+    padding-left: 30px;
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+
+/* Infographic */
+.infographic figure {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #d5e0d8;
+    border-radius: 10px;
+}
+
+.infographic img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Image becomes slightly larger when the mouse hovers over it.
+   Duration: 0.3 seconds. */
+.infographic img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #405c49;
+}
+
+
+/* Deadlines table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #164b35;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #b8c9bd;
+}
+
+tr:nth-child(even) {
+    background-color: #edf3ee;
+}
+
+
+/* Links: normal, visited, hover and active states */
+a:link {
+    color: #075b9a;
+}
+
+a:visited {
+    color: #603c8c;
+}
+
+a:hover {
+    color: #c07800;
+}
+
+a:active {
+    color: #b3261e;
+}
+
+
+/* Register Now button */
+.button {
+    display: inline-block;
+    background-color: #164b35;
+    color: white !important;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border: 2px solid #164b35;
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button changes colour smoothly when hovered.
+   Duration: 0.3 seconds. */
+.button:hover {
+    background-color: #28734f;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* Call to action */
+.call-to-action {
+    background-color: #e8f1eb;
+    text-align: center;
+    border: 2px solid #164b35;
+}
+
+
+/* Footer */
+footer {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .tax-image {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+}
